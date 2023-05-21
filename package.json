@@ -15,12 +15,10 @@
     "test-storybook": "FORCE_COLOR=1 test-storybook",
     "build-storybook": "FORCE_COLOR=1 storybook build",
     "test": "FORCE_COLOR=1 jest --passWithNoTests",
-    "e2e:headless": "playwright test",
-    "e2e:ui": "playwright test --ui",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "postinstall": "npx patch-package -y",
     "preinstall": "npx only-allow yarn",
-    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.storybook/|.eslintrc.js' --image graph.svg"
+    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.storybook/|.eslintrc.js' --image graph.svg"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.1",
@@ -48,6 +46,7 @@
     "@vercel/otel": "^0.3.0",
     "class-variance-authority": "^0.6.0",
     "lodash": "^4.17.21",
+    "metamask-react": "2.6.0",
     "next": "^13.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -59,7 +58,6 @@
     "@jest/globals": "^29.5.0",
     "@next/bundle-analyzer": "^13.3.0",
     "@opentelemetry/api": "^1.4.1",
-    "@playwright/test": "^1.32.3",
     "@storybook/addon-essentials": "^7.0.5",
     "@storybook/addon-interactions": "^7.0.5",
     "@storybook/addon-links": "^7.0.5",
